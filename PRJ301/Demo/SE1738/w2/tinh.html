@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Calculate form</h1>
+        <form action="tinh"  id="f">
+            Num :<input type="text" name="num1"/><br/>
+            Num 2:<input type="text" name="num2"/><br/>
+            Select Operator:
+            <input type="radio" onclick="tinh()" name="op" value="+"/>+
+            <input type="radio" onclick="tinh()" name="op" value="-"/>-
+            <input type="radio" onclick="tinh()" name="op" value="x"/>x
+            <input type="radio" onclick="tinh()" name="op" value=":"/>:
+            <br/>
+            <select name="op" onchange="tinh()">
+                <option value="0">-Select-</option>
+                <option value="+">+</option>
+                <option value="-">-</option><!-- comment -->
+                <option value="x">x</option>
+                <option value=":">:</option>
+            </select>
+        </form>
+        <script>
+            function tinh() {
+                 let form=document.getElementById('f');
+                // form.action="tinh";
+                 form.submit();
+             }
+        </script>
+    </body>
+</html>
