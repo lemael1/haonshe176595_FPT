@@ -21,7 +21,7 @@
 
         <form action="login" method="post">
             Enter username <input type="text" name="user"><br>
-            Enter username <input type="password" name="pass"><br>
+            Enter password <input type="password" name="pass"><br>
             <input type="submit" value="submit">
 
 

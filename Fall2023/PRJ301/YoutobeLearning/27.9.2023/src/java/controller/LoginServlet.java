@@ -16,7 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
  *
  * @author 1112v
  */
-public class loginSevlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -33,10 +33,10 @@ public class loginSevlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet loginSevlet</title>");  
+            out.println("<title>Servlet LoginServlet</title>");  
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet loginSevlet at " + request.getContextPath () + "</h1>");
+            out.println("<h1>Servlet LoginServlet at " + request.getContextPath () + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -71,7 +71,7 @@ public class loginSevlet extends HttpServlet {
         String p_raw=request.getParameter("pass");
         // Lay du lieu file xml
         String u_init=getServletContext().getInitParameter("user");
-        String p_init=getServletContext().getInitParameter("password");
+        String p_init=getServletContext().getInitParameter("pass");
         // Check thong tin va gui gia tri
         if(u_raw.equalsIgnoreCase(u_init) && p_raw.equalsIgnoreCase(p_init)){
             request.setAttribute("name",u_raw);
