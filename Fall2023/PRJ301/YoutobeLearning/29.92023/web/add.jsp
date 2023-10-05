@@ -11,7 +11,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
+    <body>     
+        <h1 style="color: red">${requestScope.error}</h1>
         <h1>Add new a category</h1>
         <form action="add">
             Input ID <input type="number" name="id"><br>

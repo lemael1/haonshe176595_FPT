@@ -19,8 +19,8 @@ import model.Category;
  *
  * @author 1112v
  */
-@WebServlet(name="AddServlet", urlPatterns={"/add"})
-public class AddServlet extends HttpServlet {
+@WebServlet(name="UpdateServlet", urlPatterns={"/update"})
+public class UpdateServlet extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -37,10 +37,10 @@ public class AddServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet AddServlet</title>");  
+            out.println("<title>Servlet UpdateServlet</title>");  
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet AddServlet at " + request.getContextPath () + "</h1>");
+            out.println("<h1>Servlet UpdateServlet at " + request.getContextPath () + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -57,24 +57,15 @@ public class AddServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        request.setCharacterEncoding("UTF-8");
-       String id_raw=request.getParameter("id");
-       String name_raw=request.getParameter("name");
-       String describe_raw=request.getParameter("describe");
-       int id;
-        CategoryDAO cdb = new CategoryDAO();
-        
+        String id_raw=request.getParameter("id");
+        int id;
+        CategoryDAO cdb= new CategoryDAO();
         try {
             id=Integer.parseInt(id_raw);
             Category c= cdb.getCategorybyID(id);
-            if(c==null){
-            Category cNew= new Category(id, name_raw, describe_raw);
-            cdb.insert(cNew);
-            response.sendRedirect("list");
-            }else{
-                  request.setAttribute("error",id+"existed");
-                  request.getRequestDispatcher("add.jsp").forward(request, response);
-         }
+            request.setAttribute("category", c);
+            request.getRequestDispatcher("update.jsp").forward(request, response);
+            
         } catch (NumberFormatException e) {
             System.out.println(e);
         }
@@ -90,7 +81,21 @@ public class AddServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        processRequest(request, response);
+       request.setCharacterEncoding("UTF-8");
+       String id_raw=request.getParameter("id");
+       String name_raw=request.getParameter("name");
+       String describe_raw=request.getParameter("describe");
+       int id;
+        CategoryDAO cdb = new CategoryDAO();
+        
+        try {
+            id=Integer.parseInt(id_raw);      
+            Category cNew= new Category(id, name_raw, describe_raw);
+            cdb.update(cNew);
+            response.sendRedirect("list");            
+        } catch (NumberFormatException e) {
+            System.out.println(e);
+        }
     }
 
     /** 

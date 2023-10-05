@@ -12,6 +12,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <script type="text/javascript">
+            function doDelete(id){
+                if(confirm("are U sure to delete category with id ="+id)){
+                    window.location="delete?id="+id;
+                }
+            }
+        </script>
     </head>
     <body>
     <center>
@@ -22,6 +29,7 @@
                 <th>ID</th>
                 <th>Name</th><!-- <th></th> -->
                 <th>Describe</th>
+                <th>Action</th>
             </tr>
             <c:forEach items="${requestScope.data}" var="c">
                 <c:set var="id" value="${c.id}"/>
@@ -29,6 +37,10 @@
                     <td>${id}</td>
                     <td>${c.name}</td>
                     <td>${c.describe}</td>
+                    <td>
+                        <a href="update?id=${id}">Update</a>&nbsp;&nbsp;&nbsp;
+                        <a href="#" onclick="doDelete('${id}')">Delete</a>
+                    </td>
                 </tr>
             </c:forEach>
 
