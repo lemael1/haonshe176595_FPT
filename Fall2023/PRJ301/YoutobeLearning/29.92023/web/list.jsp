@@ -31,7 +31,7 @@
                 <th>Describe</th>
                 <th>Action</th>
             </tr>
-            <c:forEach items="${requestScope.data}" var="c">
+            <c:forEach items="${requestScope.data}" var="c" >
                 <c:set var="id" value="${c.id}"/>
                 <tr>
                     <td>${id}</td>

@@ -119,4 +119,4 @@ INSERT INTO [dbo].[Products] ([id], [name], [quantity], [price], [releaseDate], 
 VALUES (N'vsm1', N'Vsmart Joy 4 3GB-64GB', 60, 13000.0000, '2021-10-05', N'smart Live 4 6GB-64GB sở hữu cấu hình cực đỉnh, đưa bạn đến trải nghiệm giải trí bất tận với dung lượng pin lớn, màn hình tuyệt đẹp và 4 camera sau AI đầy ấn tượng.', N'images/vsm1.jpg', 4);
 
 go
-select * from Products
+select * from Categories
