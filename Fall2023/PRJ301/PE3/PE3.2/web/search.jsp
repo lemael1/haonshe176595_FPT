@@ -14,16 +14,32 @@
     </head>
     <body>
         <h1>Search</h1>
-        <form action="seach">
-            Authors:<select name="authorname">
+        <form action="search">
+            Authors:<select name="authorid">
                 <c:forEach items="${requestScope.list_author}" var="la" >
-                    <option>
-                        ${la.}
+                    <option value="${la.authorid}">
+                        ${la.authorname}
                     </option>
                 </c:forEach>
             </select>
             <input type="submit" value="submit">
         </form>
-        
+        <c:set var="authorid" value="${requestScope.authorid}"/>
+   <% if(request.getAttribute("authorid") != null){ %>
+        <table border="1px">
+            <tr>
+                <th>Paper ID</th>
+                <th> Title</th>
+                <th>Published Date</th>
+            </tr>
+            <c:forEach items="${requestScope.papers}" var="p" >
+                <tr>
+                    <td>${p.paperid}</td>
+                    <td>${p.title}</td><!-- comment -->
+                    <td>${p.publishedDate}</td>
+                </tr>
+            </c:forEach>
+        </table>
+        <%}%>
     </body>
 </html>

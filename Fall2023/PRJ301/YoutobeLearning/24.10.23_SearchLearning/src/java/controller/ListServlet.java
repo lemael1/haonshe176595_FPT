@@ -13,17 +13,16 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
 import java.util.List;
-import model.Author;
-import model.Paper;
+import model.Category;
+import model.Product;
 
 /**
  *
  * @author 1112v
  */
-@WebServlet(name="SearchServlet", urlPatterns={"/search"})
-public class SearchServlet extends HttpServlet {
+@WebServlet(name="ListServlet", urlPatterns={"/list"})
+public class ListServlet extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -40,10 +39,10 @@ public class SearchServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet SearchServlet</title>");  
+            out.println("<title>Servlet ListServlet</title>");  
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet SearchServlet at " + request.getContextPath () + "</h1>");
+            out.println("<h1>Servlet ListServlet at " + request.getContextPath () + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -60,20 +59,22 @@ public class SearchServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-       DAO d= new DAO();
-        List<Author> list=d.getAllAuthors();
-        request.setAttribute("list_author", list);
-        String authorid_raw=request.getParameter("authorid");
-        int authorid;
+        DAO d= new DAO();
+        List<Category> list= d.getAll();
+        request.setAttribute("categories", list);
+        String cid_raw=request.getParameter("key");
+        if(cid_raw!=null){
+        int cid;
         try {
-            authorid=Integer.parseInt(authorid_raw);
-            List<Paper> papers= d.getAllPaperbyAuId(authorid);
-            request.setAttribute("authorid", authorid);
-            request.setAttribute("papers", papers);
+            cid=Integer.parseInt(cid_raw);
+            List<Product> products=d.getProductbyCid(cid);
+            request.setAttribute("products", products);
+            request.setAttribute("cid", cid);
         } catch (NumberFormatException e) {
             System.out.println(e);
-        }
-        request.getRequestDispatcher("search.jsp").forward(request, response);
+        }}
+       
+        request.getRequestDispatcher("list.jsp").forward(request, response);
     } 
 
     /** 

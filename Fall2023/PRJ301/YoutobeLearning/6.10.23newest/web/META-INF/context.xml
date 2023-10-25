@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/6.10.23newest"/>
+<Context path="/24.10.23_searchLearning" reloadable="true">
+    <Resources cachingAllowed="false" cacheMaxSize="0" />
+
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+
+    <Manager pathname="" />
+</Context>

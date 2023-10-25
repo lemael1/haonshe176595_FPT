@@ -5,7 +5,10 @@
 
 package controller;
 
+import dal.AuthorDAO;
+import dal.Author_PaperDAO;
 import dal.DAO;
+import dal.PaperDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -13,7 +16,10 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
+import java.sql.Date;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.List;
 import model.Author;
 import model.Paper;
@@ -22,8 +28,8 @@ import model.Paper;
  *
  * @author 1112v
  */
-@WebServlet(name="SearchServlet", urlPatterns={"/search"})
-public class SearchServlet extends HttpServlet {
+@WebServlet(name="AddServlet", urlPatterns={"/add"})
+public class AddServlet extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -40,10 +46,10 @@ public class SearchServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet SearchServlet</title>");  
+            out.println("<title>Servlet AddServlet</title>");  
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet SearchServlet at " + request.getContextPath () + "</h1>");
+            out.println("<h1>Servlet AddServlet at " + request.getContextPath () + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -60,20 +66,11 @@ public class SearchServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-       DAO d= new DAO();
-        List<Author> list=d.getAllAuthors();
-        request.setAttribute("list_author", list);
-        String authorid_raw=request.getParameter("authorid");
-        int authorid;
-        try {
-            authorid=Integer.parseInt(authorid_raw);
-            List<Paper> papers= d.getAllPaperbyAuId(authorid);
-            request.setAttribute("authorid", authorid);
-            request.setAttribute("papers", papers);
-        } catch (NumberFormatException e) {
-            System.out.println(e);
-        }
-        request.getRequestDispatcher("search.jsp").forward(request, response);
+        DAO d= new DAO();
+        List<Author> author_list= d.getAllAuthors();
+        request.setAttribute("author_list", author_list);
+        
+       request.getRequestDispatcher("add.jsp").forward(request, response);
     } 
 
     /** 
@@ -86,7 +83,43 @@ public class SearchServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        processRequest(request, response);
+        String paperid_raw=request.getParameter("paperid");
+        String title_raw= request.getParameter("title");
+        Date date = Date.valueOf(request.getParameter("date"));
+        String[] author_id_raw= request.getParameterValues("auid");
+       
+        int author_id;
+        int paperid;
+       
+        try {
+            paperid=Integer.parseInt(paperid_raw);
+            // Convert the String[] array to an int[] array using Java 8 streams.
+        int[] authorId = Arrays.stream( author_id_raw).mapToInt(Integer::parseInt).toArray();            
+            // set object Paper
+            Paper p= new Paper();
+            p.setPaperid(paperid);
+            p.setTitle(title_raw);
+            p.setPublishedDate(date);
+            PaperDAO pDao= new PaperDAO();
+             Author_PaperDAO a_pDao = new Author_PaperDAO();
+            try {
+                
+                pDao.addPaper(p);
+                for (int i = 0; i < authorId.length; i++) {
+                a_pDao.addAuthor_Paper(paperid, authorId[i]);
+            }
+            } catch (SQLException e) {
+                System.out.println(e);
+            }
+        } catch (NumberFormatException e) {
+            System.out.println(e);
+        }
+        //back to add.jsp
+        AuthorDAO authorDao = new AuthorDAO();
+        List<Author> authors = authorDao.getAuthors();
+
+        request.setAttribute("author_list", authors);
+        request.getRequestDispatcher("add.jsp").forward(request, response);
     }
 
     /** 
