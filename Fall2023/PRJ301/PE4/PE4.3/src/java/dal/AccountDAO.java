@@ -61,8 +61,8 @@ public class AccountDAO extends DBContext {
                 + "  where userid=? and password=?";
         try {
             PreparedStatement st= connection.prepareStatement(sql);
-            st.setString(1,"userid");
-            st.setString(2,"password");
+            st.setString(1,userid);
+            st.setString(2,password);
             ResultSet rs= st.executeQuery();
             while(rs.next()){
             a.setUserid(rs.getString("userid"));
@@ -77,5 +77,30 @@ public class AccountDAO extends DBContext {
         
         return a;
     }
+   public Account getAccoutbyUserID(String userid) {
+    Account a= new Account();
+    String sql = "SELECT [userid]\n"
+            + "      ,[password]\n"
+            + "      ,[displayname]\n"
+            + "  FROM [dbo].[Account]\n"
+            + "  where userid=?";
+    try {
+        PreparedStatement st= connection.prepareStatement(sql);
+        st.setString(1, userid); // Sử dụng biến userid
+        ResultSet rs= st.executeQuery();
+        while(rs.next()){
+        a.setUserid(rs.getString("userid"));
+        a.setPassword(rs.getString("password"));
+        a.setDisplayname(rs.getString("displayname"));
+
+        }
+    } catch (SQLException e) {
+        System.out.println(e);
+    }
+
+
+    return a;
+}
+
 
 }

@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +13,22 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-    </body>
+
+        <c:forEach items="${requestScope.Thread_list}" var="thlist" >
+            <c:set var="threadId" value="${thlist.tid}"/>
+            <br>
+            Thread:${thlist.tcontent}<br>
+            <c:forEach items="${requestScope.Comment_list}" var="cmtlist">
+                <c:if test="${threadId == cmtlist.thread.tid}" >
+                    ${cmtlist.account.displayname}:${cmtlist.ctitle}<br>
+                </c:if>                     
+            </c:forEach>  
+            <form action="discuss" method="post">
+                <input type="hidden" name="threadid1" value="${thlist.tid}">
+                <input type="text" name="ctitle"><!-- comment -->
+                <input type="submit" value="submit">
+            </form>
+        </c:forEach>
+    </form
+</body>
 </html>

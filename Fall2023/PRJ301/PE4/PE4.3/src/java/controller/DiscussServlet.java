@@ -5,6 +5,8 @@
 
 package controller;
 
+import dal.CommentDAO;
+import dal.ThreadDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -12,6 +14,12 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import model.Account;
+import model.Comment;
 
 /**
  *
@@ -54,16 +62,28 @@ public class DiscussServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-     HttpSession session = request.getSession(false);
-
-    // Check if user is logged in or not
-    if (session == null || session.getAttribute("user") == null) {
-        // If user is not logged in, display an error message
-        response.getWriter().println("Access Denied. You must be logged in to access this page.");}
-//    } else {
-//        // If user is logged in, continue processing the request
-//        // Your existing code here...
-//    }
+     HttpSession session = request.getSession();
+      String result =(String) session.getAttribute("result");
+      if(result==null || result.equals("Login failed")){
+      PrintWriter out= response.getWriter();
+      out.println("Accessdenied");
+      }else{
+             Account a =(Account) session.getAttribute("account");
+             // Send all Threads to /discuss
+             ThreadDAO thDAO= new ThreadDAO();
+             List<model.Thread> Thread_list=thDAO.GetAllThread();
+             request.setAttribute("Thread_list",Thread_list);
+             CommentDAO cmtDAO= new CommentDAO();
+             List<Comment> Comment_list=cmtDAO.GetAllComment();
+             request.setAttribute("Comment_list", Comment_list);
+             
+             
+            
+             
+      }
+      request.getRequestDispatcher("discuss.jsp").forward(request, response);
+        
+   
     } 
 
     /** 
@@ -76,7 +96,23 @@ public class DiscussServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
+      CommentDAO cmtDAO= new CommentDAO();
+      String ctitle_raw=request.getParameter("ctitle");
+      int cid=cmtDAO.nextid();
+      String tid_raw=request.getParameter("threadid1");
+      int tid = 0;
+        try {
+            tid=Integer.parseInt(tid_raw);
+        } catch (NumberFormatException e) {
+            System.out.println(e);
+        }
       
+    
+        try {
+            cmtDAO.insertComment(cid, ctitle_raw, userid,tid);
+        } catch (SQLException ex) {
+            Logger.getLogger(DiscussServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /** 
