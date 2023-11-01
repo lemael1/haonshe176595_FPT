@@ -1,0 +1,27 @@
+
+- Cách lấy năm 
+ int year = Year.now().getValue();
+
+
+- Cách lấy giá trị từ String thành date
+Date date = Date.valueOf(request.getParameter("date"));
+
+
+
+ -Convert the String[] array to an int[] array using Java 8 streams.
+        int[] authorId = Arrays.stream( author_id_raw).mapToInt(Integer::parseInt).toArray();  
+
+
+- Cách  lấy mỗi ngày  
+LocalDate currentDate = LocalDate.now();   
+
+
+- Cách lấy mỗi tháng 
+MonthDay currentMonth = MonthDay.now();
+
+- Page login Gồm 2 servlet /login và /.... 1 cái gì đó nữa : PE4.3
+
+
+
+
+
