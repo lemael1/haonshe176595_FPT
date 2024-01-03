@@ -1,0 +1,16 @@
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\bin\Debug\net5.0\Library.exe
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\bin\Debug\net5.0\Library.deps.json
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\bin\Debug\net5.0\Library.runtimeconfig.json
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\bin\Debug\net5.0\Library.runtimeconfig.dev.json
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\bin\Debug\net5.0\Library.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\bin\Debug\net5.0\Library.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\obj\Debug\net5.0\Library.GeneratedMSBuildEditorConfig.editorconfig
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\obj\Debug\net5.0\Library.AssemblyInfoInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\obj\Debug\net5.0\Library.AssemblyInfo.cs
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\obj\Debug\net5.0\Library.csproj.CoreCompileInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\obj\Debug\net5.0\Library.sourcelink.json
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\obj\Debug\net5.0\Library.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\obj\Debug\net5.0\refint\Library.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\obj\Debug\net5.0\Library.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\obj\Debug\net5.0\Library.genruntimeconfig.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Library\obj\Debug\net5.0\ref\Library.dll
