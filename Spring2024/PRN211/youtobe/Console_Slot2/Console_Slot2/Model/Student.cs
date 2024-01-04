@@ -40,16 +40,35 @@ namespace Console_Slot2.Model
         public Student()
         {
         }
-        public void Display() {
+        /*public void Display() {
+            Console.WriteLine($"Student: Id:{Id}, Name:{Name}");              Slot 2
+        }*/
+
+        // Slot 3
+        public virtual void Display()
+        {
             Console.WriteLine($"Student: Id:{Id}, Name:{Name}");
         }
-        public void input()
+        public override string ToString()
+        {
+            return $"Student: Id:{Id}, Name:{Name}";
+        }
+        public override bool Equals(object obj)      // cực kì quan trọng nếu dùng các 
+        {                                            // câu lệnh mang tính tìm kiếm, check 
+            return obj is Student student &&         // trong code như contain(), remove()
+                   Id == student.Id &&
+                   Name == student.Name;
+        }
+        //
+        public virtual void  input()
         {
             Console.WriteLine("Input Id :");
             Id = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Input Name:");
             Name=Console.ReadLine();
         }
+
+        
     }
       class SEStudent : Student
     {
@@ -59,12 +78,21 @@ namespace Console_Slot2.Model
         {
             Skill = skill;
         }
-        public void Display()
+       /* public void Display()
+        {
+            base.Display();                                 Slot2
+            Console.WriteLine($"Skill:{Skill}");
+        }*/
+        public override void Display()
         {
             base.Display();
             Console.WriteLine($"Skill:{Skill}");
         }
-        public void input()
+        public override string ToString()
+        {
+            return base.ToString() + $"Skill:{Skill}";
+        }
+        public override void input()
         {
             base.input();
             Console.WriteLine("Input Skill");
