@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Baitap
 {
-    internal class Course
+    internal class Course : IComparable<Course>
     {
         public int Id { get; private set; }
         public string Title { get; private set; }
@@ -17,11 +17,13 @@ namespace Baitap
         public virtual void input()
         {
             Console.WriteLine("Input id");
-            Id = Convert.ToInt32(Console.ReadLine());
+            Id = Validation.GetInt(1,1000,"Vui Long Nhap So");
             Console.WriteLine("Input title course");
-            Title = Console.ReadLine();
+            Title = Validation.GetString("Vui Long Nhap Title");
             Console.WriteLine("Input the startDate");
-            StartDate = DateTime.ParseExact(Console.ReadLine(), "dd-MM-yyyy", null);
+            StartDate = Validation.GetDate(new DateTime(2023, 1, 1),new DateTime(2023, 12, 30)
+                , "Vui long nhap ngay", "dd-MM-yyyy");
+            /*StartDate = Convert.ToDateTime(Console.ReadLine());*/
         }
 
 
@@ -29,7 +31,12 @@ namespace Baitap
         //ToString Property
         public override string ToString()
         {
-            return $"ID: {Id}, CourseName : {Title} , StartDate :{StartDate}";
+            return $"ID: {Id}, CourseName : {Title} , StartDate :{StartDate.ToString("dd-MM-yyyy")}";
+        }
+
+        public int CompareTo(Course other)
+        {
+            return this.Title.CompareTo(other.Title);
         }
 
 

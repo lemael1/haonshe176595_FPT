@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console_Slot2", "Console_Sl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "Library\Library.csproj", "{116B5443-BCE1-480F-968D-D183355B4B67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baitap", "Baitap\Baitap.csproj", "{C811EDB5-E3F8-4B8E-9C04-88E8DAA3AA30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excersise 4.1", "Baitap\Excersise 4.1.csproj", "{C811EDB5-E3F8-4B8E-9C04-88E8DAA3AA30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadFromFile", "ReadFromFile\ReadFromFile.csproj", "{DECB0AB6-3A3A-4120-9193-A35ECDE3713E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{C811EDB5-E3F8-4B8E-9C04-88E8DAA3AA30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C811EDB5-E3F8-4B8E-9C04-88E8DAA3AA30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C811EDB5-E3F8-4B8E-9C04-88E8DAA3AA30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DECB0AB6-3A3A-4120-9193-A35ECDE3713E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECB0AB6-3A3A-4120-9193-A35ECDE3713E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECB0AB6-3A3A-4120-9193-A35ECDE3713E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DECB0AB6-3A3A-4120-9193-A35ECDE3713E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

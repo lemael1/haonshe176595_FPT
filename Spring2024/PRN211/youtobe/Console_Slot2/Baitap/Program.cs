@@ -8,24 +8,19 @@ namespace Baitap
     {
         static void Main(string[] args)
         {
-          List<Course> courses = new List<Course>();
-            while (true)
-            {
-                Console.WriteLine("Do you want create a new course(0 for exit)");
-                string choice = Console.ReadLine();
-                if (choice.Equals("0")) {
-                    break;
-                }
-                else {
-                    CreateCourse();
-                }
-
-            }
+          CourseManager manager = new CourseManager();
+            //manager.InitData();
+            /*manager.InputListofCourse();*/
+            //manager.ShowAllCourses();
+            //  manager.SearchByDate();
+            //  manager.InitData();
+            /* manager.Sort();*/
+            /*manager.SortById();
+            manager.SortByStartDate();
+             manager.ReadFromFile();
+            manager.ShowAllCourses();*/
         }
 
-        private static void CreateCourse()
-        {
-           
-        }
+
     }
 }

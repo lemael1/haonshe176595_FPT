@@ -1,0 +1,16 @@
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\bin\Debug\net5.0\Baitap.exe
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\bin\Debug\net5.0\Baitap.deps.json
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\bin\Debug\net5.0\Baitap.runtimeconfig.json
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\bin\Debug\net5.0\Baitap.runtimeconfig.dev.json
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\bin\Debug\net5.0\Baitap.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\bin\Debug\net5.0\Baitap.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\Baitap.GeneratedMSBuildEditorConfig.editorconfig
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\Baitap.AssemblyInfoInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\Baitap.AssemblyInfo.cs
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\Baitap.csproj.CoreCompileInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\Baitap.sourcelink.json
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\Baitap.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\refint\Baitap.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\Baitap.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\Baitap.genruntimeconfig.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\ref\Baitap.dll

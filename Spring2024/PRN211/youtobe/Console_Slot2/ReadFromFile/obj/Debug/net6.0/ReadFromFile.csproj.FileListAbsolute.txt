@@ -1,0 +1,15 @@
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\bin\Debug\net6.0\ReadFromFile.exe
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\bin\Debug\net6.0\ReadFromFile.deps.json
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\bin\Debug\net6.0\ReadFromFile.runtimeconfig.json
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\bin\Debug\net6.0\ReadFromFile.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\bin\Debug\net6.0\ReadFromFile.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\obj\Debug\net6.0\ReadFromFile.GeneratedMSBuildEditorConfig.editorconfig
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\obj\Debug\net6.0\ReadFromFile.AssemblyInfoInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\obj\Debug\net6.0\ReadFromFile.AssemblyInfo.cs
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\obj\Debug\net6.0\ReadFromFile.csproj.CoreCompileInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\obj\Debug\net6.0\ReadFromFile.sourcelink.json
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\obj\Debug\net6.0\ReadFromFile.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\obj\Debug\net6.0\refint\ReadFromFile.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\obj\Debug\net6.0\ReadFromFile.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\obj\Debug\net6.0\ReadFromFile.genruntimeconfig.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\ReadFromFile\obj\Debug\net6.0\ref\ReadFromFile.dll
