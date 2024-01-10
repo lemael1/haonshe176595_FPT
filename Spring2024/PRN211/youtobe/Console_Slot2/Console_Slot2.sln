@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "Library\Library.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excersise 4.1", "Baitap\Excersise 4.1.csproj", "{C811EDB5-E3F8-4B8E-9C04-88E8DAA3AA30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadFromFile", "ReadFromFile\ReadFromFile.csproj", "{DECB0AB6-3A3A-4120-9193-A35ECDE3713E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadFromFile", "ReadFromFile\ReadFromFile.csproj", "{DECB0AB6-3A3A-4120-9193-A35ECDE3713E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoDelegate", "DemoDelegate\DemoDelegate.csproj", "{AC655AA3-664F-4B50-B618-EAA77C65549F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DECB0AB6-3A3A-4120-9193-A35ECDE3713E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DECB0AB6-3A3A-4120-9193-A35ECDE3713E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DECB0AB6-3A3A-4120-9193-A35ECDE3713E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC655AA3-664F-4B50-B618-EAA77C65549F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC655AA3-664F-4B50-B618-EAA77C65549F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC655AA3-664F-4B50-B618-EAA77C65549F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC655AA3-664F-4B50-B618-EAA77C65549F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

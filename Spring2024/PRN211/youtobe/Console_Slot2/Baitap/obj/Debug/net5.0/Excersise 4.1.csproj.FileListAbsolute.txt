@@ -14,3 +14,4 @@ D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\ne
 D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\Excersise 4.1.pdb
 D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\Excersise 4.1.genruntimeconfig.cache
 D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\obj\Debug\net5.0\ref\Excersise 4.1.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\youtobe\Console_Slot2\Baitap\bin\Debug\net5.0\TextFile1.txt

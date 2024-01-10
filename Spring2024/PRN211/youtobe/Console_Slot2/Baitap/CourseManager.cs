@@ -67,22 +67,27 @@ namespace Baitap
         {
             courses.Sort();
         }
-        public void ReadFromFile()
+        public void ReadFromFile(string FileName)
         {
+            courses.Clear();
             try
             {
-                using (StreamReader sr = new StreamReader("C:\\Users\\Admin\\Desktop\\Sample.txt"))
+                using (StreamReader reader = new StreamReader(FileName))
                 {
                     string line;
-                    while ((line = sr.ReadLine()) != null)
-                    {
-                        if (!string.IsNullOrWhiteSpace(line))
-                        {
-                            SplitForObject(line);
+                    while ((line = reader.ReadLine()) != null)   //C|1|MAS|1 Jan 2023|meet.....
+                    {                     
+                        Course c;
+                        if (line[0] == 'C') {                          
+                            c = new Course();
                         }
+                        else {
+                            c = new OnlineCourse();
+                        }
+                        c.ReaderFromText(line);
+                        courses.Add(c);
                     }
-                }
-                Console.ReadLine();
+                }           
             }
             catch (Exception e)
             {
@@ -94,25 +99,6 @@ namespace Baitap
             }
         }
 
-        public void SplitForObject(string line)
-        {
-            string[] strings = line.Split("|");
-            Course c;
-            if (strings.Length == 4)
-            {
-                c = new OnlineCourse(Convert.ToInt32(strings[0]), strings[1],
-                    DateTime.ParseExact(strings[2], "dd-MM-yyyy", null), strings[3]);
-            }
-            else if (strings.Length == 3)
-            {
-                c = new Course(Convert.ToInt32(strings[0]), strings[1],
-                    DateTime.ParseExact(strings[2], "dd-MM-yyyy", null));
-            }
-            else
-            {
-                Console.WriteLine("Invalid line format: " + line);
-            }
-        }
         public void SortById()
         {
             courses.Sort(new IdComparer());

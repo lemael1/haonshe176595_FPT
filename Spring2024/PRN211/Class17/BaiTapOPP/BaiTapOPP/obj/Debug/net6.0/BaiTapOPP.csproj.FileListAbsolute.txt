@@ -1,0 +1,15 @@
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\bin\Debug\net6.0\BaiTapOPP.exe
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\bin\Debug\net6.0\BaiTapOPP.deps.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\bin\Debug\net6.0\BaiTapOPP.runtimeconfig.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\bin\Debug\net6.0\BaiTapOPP.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\bin\Debug\net6.0\BaiTapOPP.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\obj\Debug\net6.0\BaiTapOPP.GeneratedMSBuildEditorConfig.editorconfig
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\obj\Debug\net6.0\BaiTapOPP.AssemblyInfoInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\obj\Debug\net6.0\BaiTapOPP.AssemblyInfo.cs
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\obj\Debug\net6.0\BaiTapOPP.csproj.CoreCompileInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\obj\Debug\net6.0\BaiTapOPP.sourcelink.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\obj\Debug\net6.0\BaiTapOPP.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\obj\Debug\net6.0\refint\BaiTapOPP.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\obj\Debug\net6.0\BaiTapOPP.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\obj\Debug\net6.0\BaiTapOPP.genruntimeconfig.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\BaiTapOPP\BaiTapOPP\obj\Debug\net6.0\ref\BaiTapOPP.dll

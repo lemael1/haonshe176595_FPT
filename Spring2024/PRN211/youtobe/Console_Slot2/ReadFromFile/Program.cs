@@ -9,7 +9,7 @@ namespace ReadFromFile
             try
             {
                 //Pass the file path and file name to the StreamReader constructor
-                StreamReader sr = new StreamReader("C:\\Users\\Admin\\Desktop\\Sample.txt");
+                StreamReader sr = new StreamReader("D:\\haonshe176595_FPT\\Spring2024\\PRN211\\youtobe\\Console_Slot2\\Baitap\\TextFile1.txt");
                 //Read the first line of text
                 line = sr.ReadLine();
                 //Continue to read until you reach end of file

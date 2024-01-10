@@ -4,16 +4,18 @@
     {
         static void Main(string[] args)
         {
-            dynamic myValue = 0;
-            Console.WriteLine("myInt is a: {0}", myValue.GetType().Name);
-            myValue = true;
-            Console.WriteLine("myInt is a: {0}", myValue.GetType().Name);
-            myValue = "Hello World";
-            Console.WriteLine("myInt is a: {0}", myValue.GetType().Name);
-            myValue = 0.5;
-            Console.WriteLine("myDouble is a: {0}", myValue.getType().Name);
-            Console.ReadLine();
-
+            BaiTapManager b= new BaiTapManager();
+            /* b.Question1();
+             b.Question2();
+             b.Question3();
+             b.Question4();
+             b.Question5();
+             b.Question6();
+            
+            b.Question7();
+            b.Question8();*/
+            //b.Question9();
+            b.Question6();
 
         }
     }

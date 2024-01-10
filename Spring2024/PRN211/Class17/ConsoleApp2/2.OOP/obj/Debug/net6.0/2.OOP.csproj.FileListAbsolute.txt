@@ -1,0 +1,15 @@
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\bin\Debug\net6.0\2.OOP.exe
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\bin\Debug\net6.0\2.OOP.deps.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\bin\Debug\net6.0\2.OOP.runtimeconfig.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\bin\Debug\net6.0\2.OOP.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\bin\Debug\net6.0\2.OOP.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\obj\Debug\net6.0\2.OOP.GeneratedMSBuildEditorConfig.editorconfig
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\obj\Debug\net6.0\2.OOP.AssemblyInfoInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\obj\Debug\net6.0\2.OOP.AssemblyInfo.cs
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\obj\Debug\net6.0\2.OOP.csproj.CoreCompileInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\obj\Debug\net6.0\2.OOP.sourcelink.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\obj\Debug\net6.0\2.OOP.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\obj\Debug\net6.0\refint\2.OOP.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\obj\Debug\net6.0\2.OOP.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\obj\Debug\net6.0\2.OOP.genruntimeconfig.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\ConsoleApp2\2.OOP\obj\Debug\net6.0\ref\2.OOP.dll

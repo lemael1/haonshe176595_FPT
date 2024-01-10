@@ -31,7 +31,7 @@ namespace Baitap
         //ToString Property
         public override string ToString()
         {
-            return $"ID: {Id}, CourseName : {Title} , StartDate :{StartDate.ToString("dd-MM-yyyy")}";
+            return $"ID: {Id}, CourseName : {Title} , StartDate :{StartDate:dd-MM-yyyy}";
         }
 
         public int CompareTo(Course other)
@@ -50,6 +50,17 @@ namespace Baitap
             Id = id;
             Title = title;
             StartDate = startDate;
+        }
+
+
+        // Reader from File
+        public virtual void ReaderFromText(string text)  // C|1|MAS|1 Jan 2023
+        {
+            string[] texts = text.Split("|");
+            Id = Convert.ToInt32(texts[1]);
+            Title = texts[2];
+            StartDate = Convert.ToDateTime(text[3]);       
+
         }
     }
     class OnlineCourse : Course
@@ -77,6 +88,12 @@ namespace Baitap
         public override string ToString()
         {
             return base.ToString() + $"MeetLink : {MeetLink}";
+        }
+        public override void ReaderFromText(string text)
+        {
+            int lastIndex=text.LastIndexOf('|');
+            base.ReaderFromText(text.Substring(0,lastIndex));
+            MeetLink= text.Substring(lastIndex+1);
         }
     }
 }

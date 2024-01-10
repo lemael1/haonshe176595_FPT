@@ -19,6 +19,9 @@ namespace Baitap
             manager.SortByStartDate();
              manager.ReadFromFile();
             manager.ShowAllCourses();*/
+            manager.ReadFromFile("TextFile1.txt");
+            manager.ShowAllCourses();
+
         }
 
 
