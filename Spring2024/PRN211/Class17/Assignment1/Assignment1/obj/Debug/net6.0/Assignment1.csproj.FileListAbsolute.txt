@@ -1,0 +1,15 @@
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\bin\Debug\net6.0\Assignment1.exe
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\bin\Debug\net6.0\Assignment1.deps.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\bin\Debug\net6.0\Assignment1.runtimeconfig.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\bin\Debug\net6.0\Assignment1.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\bin\Debug\net6.0\Assignment1.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\obj\Debug\net6.0\Assignment1.GeneratedMSBuildEditorConfig.editorconfig
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\obj\Debug\net6.0\Assignment1.AssemblyInfoInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\obj\Debug\net6.0\Assignment1.AssemblyInfo.cs
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\obj\Debug\net6.0\Assignment1.csproj.CoreCompileInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\obj\Debug\net6.0\Assignment1.sourcelink.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\obj\Debug\net6.0\Assignment1.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\obj\Debug\net6.0\refint\Assignment1.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\obj\Debug\net6.0\Assignment1.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\obj\Debug\net6.0\Assignment1.genruntimeconfig.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\Assignment1\Assignment1\obj\Debug\net6.0\ref\Assignment1.dll

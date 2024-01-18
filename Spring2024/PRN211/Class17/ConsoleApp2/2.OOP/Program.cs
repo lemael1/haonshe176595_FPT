@@ -81,5 +81,6 @@ namespace OOP
             base.Greeting();
             Console.WriteLine("Greetings from C");
         }
+        Func<int, int, int> tinhtong;
     }
 }

@@ -32,6 +32,7 @@ namespace Baitap
             courses.Add(new Course(15, "AS", new DateTime(2023, 12, 7)));
             courses.Add(new Course(13, "SAS", new DateTime(2023, 11, 7)));
         }
+        public void 
        public void SortByTitlte()
         {
             courses.Sort((x,y)=> x.Title.CompareTo(y.Title));

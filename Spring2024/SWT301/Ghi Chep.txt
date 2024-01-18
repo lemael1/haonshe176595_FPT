@@ -1,0 +1,30 @@
+I. MỘT SỐ KHÁI NIỆM LIÊN QUAN ĐẾN TESTING
+1. The classic statements
+- Phân biệt các thuật ngữ:  mistake, failure,error, fault, defect
+   -> Có 1 thứ không như mong đợi xảy ra, sự sai lệch nào đó theo dự kiến này mà nó ra theo dự kiến khác
+   -> bug là thứ gây nên điều khôg ổn của app, dev phải sửa.
+bug ra đời từ khi con (bọ) bướm bay vào hệ máy tính mark II(1947)
+Trong lập trình hướng đội tượng có 4 basic princple, 5 high principle
+
+2.Concept of Software Testing: 
+- Process of comparing "what is"(actual) with
+"what ought to be"( expected)
+- Chạy app, chạy tính năng, chức năng, màn hình sau đó (evaluate/compare) với kết quả dự tính, cái ta kì vọng  : dynamic testing
+- Kiểm tra xem app đã viết/implement/hiện thực có đúng như thiết kế/mô tả/specification.("static testing"- kiểm tra các bản thiết kế đối với app được code/ design ra sao, không cần chạy app) 
+- ( Mở rộng ko kém quan trọng) - nối với môn SWR - kiểm tra coi REQS ổn không, khả thi không, phù hợp với nhu cầu người dùng hay không
+
+- Mọi thứ trong quá trình R-D-I-T có thể sai nhưng ngoại trừ requirements không được sai , requirement không đáp ứng nhu cầu người dùng=> vô dụng
+3. Ai tham gia vào phán quyết app ổn, app bug?????
+- Developer : gã phải chịu trách nhiệm chất lượng code của mình.
+           - đọc code mình viết
+           - chạy code mình viết, kiểm tra xem expected == actual hay không??
+               Kĩ thuật nào để kiểm tra code mình hiệu quả!!!
+                TDD, Unit Test (Có thể đưa vào CV)
+                 Test First Development
+                 Test Driven Development ( thay đổi 1 chút hành vi viết code)
+                 ---> dẫn đến CI/CD/DevOps
+                    Continuoes Integration ( tích hợp liên tục)
+
+
+
+ 

@@ -1,0 +1,15 @@
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\obj\Debug\net6.0\LinQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\obj\Debug\net6.0\LinQ.AssemblyInfoInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\obj\Debug\net6.0\LinQ.AssemblyInfo.cs
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\obj\Debug\net6.0\LinQ.csproj.CoreCompileInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\obj\Debug\net6.0\LinQ.sourcelink.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\bin\Debug\net6.0\LinQ.exe
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\bin\Debug\net6.0\LinQ.deps.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\bin\Debug\net6.0\LinQ.runtimeconfig.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\bin\Debug\net6.0\LinQ.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\bin\Debug\net6.0\LinQ.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\obj\Debug\net6.0\LinQ.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\obj\Debug\net6.0\refint\LinQ.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\obj\Debug\net6.0\LinQ.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\obj\Debug\net6.0\LinQ.genruntimeconfig.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\LinQ\obj\Debug\net6.0\ref\LinQ.dll

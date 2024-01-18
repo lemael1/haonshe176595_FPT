@@ -1,0 +1,15 @@
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\obj\Debug\net6.0\BaiTapLinQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\obj\Debug\net6.0\BaiTapLinQ.AssemblyInfoInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\obj\Debug\net6.0\BaiTapLinQ.AssemblyInfo.cs
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\obj\Debug\net6.0\BaiTapLinQ.csproj.CoreCompileInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\obj\Debug\net6.0\BaiTapLinQ.sourcelink.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\bin\Debug\net6.0\BaiTapLinQ.exe
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\bin\Debug\net6.0\BaiTapLinQ.deps.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\bin\Debug\net6.0\BaiTapLinQ.runtimeconfig.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\bin\Debug\net6.0\BaiTapLinQ.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\bin\Debug\net6.0\BaiTapLinQ.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\obj\Debug\net6.0\BaiTapLinQ.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\obj\Debug\net6.0\refint\BaiTapLinQ.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\obj\Debug\net6.0\BaiTapLinQ.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\obj\Debug\net6.0\BaiTapLinQ.genruntimeconfig.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\LinQ\ConsoleApp1\obj\Debug\net6.0\ref\BaiTapLinQ.dll
