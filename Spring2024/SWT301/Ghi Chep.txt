@@ -14,6 +14,7 @@ Trong lập trình hướng đội tượng có 4 basic princple, 5 high princip
 - ( Mở rộng ko kém quan trọng) - nối với môn SWR - kiểm tra coi REQS ổn không, khả thi không, phù hợp với nhu cầu người dùng hay không
 
 - Mọi thứ trong quá trình R-D-I-T có thể sai nhưng ngoại trừ requirements không được sai , requirement không đáp ứng nhu cầu người dùng=> vô dụng
+--------------------------------------------------------
 3. Ai tham gia vào phán quyết app ổn, app bug?????
 - Developer : gã phải chịu trách nhiệm chất lượng code của mình.
            - đọc code mình viết
@@ -24,6 +25,213 @@ Trong lập trình hướng đội tượng có 4 basic princple, 5 high princip
                  Test Driven Development ( thay đổi 1 chút hành vi viết code)
                  ---> dẫn đến CI/CD/DevOps
                     Continuoes Integration ( tích hợp liên tục)
+- Tester (QC - Quality Control): thánh soi, dân kiểm thử phần mềm 
+          ( thường sẽ không mở code đọc hiểu thuật toán, cách viết code...)  lỗi được gi nhận bởi tester
+           
+           Tester căn cứ trên cái gì để tìm sai sot/bug/lỗi
+          - Document (Specification,SRS,FRS,...)-> môn SWR302 -> static testing , soi ngay từ khi viết Reqs , thiết kế UI, DB, Kiến trúc.
+
+*Mở rộng:Job Title trong thề programming
+-BA(reqs) - đi khách
+- Designer(UI)
+-DB Designer -> Data Engineer(AI)
+-Developer(code): FE, BE, full-stack
+-Tester(QC)
+-Supporter(cái đặt, hướng dẫn sử dụng. ghi nhận sự cố,...)
+-Kiến trúc sư(Solution Architect/Software Architect 4-5k$/month)
+- Team pt p/m theo Scrum -> scrum master
+- PM(project manager)
+- PM khác( Product Manager)
+- CIO ( cao cấp) Chief Information Officer
+- CTO
+          - ĐƯA APP CHO TUI TEST(ĐƯA APP/KO ĐƯA CODE)
+             (không nên chỉnh sửa trong code)
+              2 Kĩ THUẬT ĐỂ TEST APP( SO SÁNH EXPECTED VS. ACTUAL)
+         1. TRÂU BÒ, DÙNG SỨC, CHẠY= CƠM
+               (TEST MANUALLY)
+
+         2. LẬP TRÌNH TỰ ĐỘNG HOÁ QUÁ TRÌNH MỞ APP/RUN APP, TỰ ĐỘNG DI CHUYỂN CHUỘT, TỰ ĐỘNG INPUT DATA, TỰ ĐỘNG NHẤN NÚT. TỰ ĐỘNG CAPTURE DATA TRẢ VỀ, TỰ ĐỘNG SO SÁNH VỚI EXPECTED, KẾT LUẬN GIÙM LUÔN ĐÚNG SAI 1 TÍNH NĂNG! 
+              (TEST AUTOMATION)
+           (KATALON, SELENIUM, APPIUM, CYPRESS,...)
+- Sếp của dân thánh soi:QC manager, QC lead/Leader
+        - Quản lí các công việc liên quan đến quá trình kiểm soát chất lượng sản phẩm, quản lí công việc liên quan quá trình tìm bug.
+        - Lên kế hoạch về việc kiểm thử, lúc nào thì test app
+        - Phân bố nguồn lực vào việc kiểm thử; chia người, chia task, bố trí bao nhiều người, máy móc thiết bị cho việc test
+
+  Giả sử cần Test app Bán hàng của siêu thị GS25
+   Manager : - biết lộ trình phát triển App của bên Dev: tháng nào, sprint nào xong module
+             - biết được độ phức tạp của app cần test: thuật toán, xử lí, thiết bị đi kèm chó phức tạp không
+             - cần bao nhiêu người để kiểm thử app? giải quyết vấn đề cần người khi app khác cũng được bố trí  kiểm thử
+             - lên kế hoạch tìm hiểu/ nghiên cứu bản thiết kế App, Specification- mô tả reqs để hiểu được app xử lí làm gì ->
+                                                      phân chia người thiết kế kịch bản test/ test cases, tưởng tượng sẵn các luồng đi của user khi xài app, xài thử theo xem có lỗi không?
+                                                      - luồng đi-> gọi là test case, phân công người design cái luồng này
+             - mua thiết bị: máy đọc mã vạch, máy/ cam nhận dạng gương mặt 
+                             mới sử dụng được trong các luồng của app
+    LƯƠNG CAO/ỔN,
+    TRÁCH NHIỆM NẶNG NỀ: ĐÓNG DẤU CHẤT LƯỢNG SẢN PHẨM
+
+
+                               
+
+
+
+- END-USER(UAT- USER ACCEPTANCE TESTING)
+      MỞ NGOẶC:(SWT302) CUSTOMER VS. USER 
+      VD: THẦY HT đại học FPT ---------- đặt hàng -----------> FSoft làm app FAP,EOS, LMS,...... 
+              - nếu lấy Fsoft là mốc thì HT là customer của fsoft
+       Giả bộ app FAP xong, bàn giao, đưa vào sử dụng ở FU
+   AI SẼ SỬ DỤNG FAP?
+           - Students
+           - Lecturers
+           - Academics Staff:...
+            => USER của app
+
+         - Thầy hiệu trưởng  -> CUSTOMER CỦA FSOFT
+CUSTOMER LÀ NGƯỜI ĐỀ RA Ý TƯỞNG LÀM APP
+ USER    LÀ NGƯỜI TRỰC TIẾP XÀI CÁI TÍNH NĂNG CỦA APP
+
+
+UAT : LÀ MỜI USER THẬT XÀI APP CHO Ý KIẾN: DÙNG ĐƯỢC TRONG CÔNG VIỆC CỦA HỌ, HAY KHÔNG -> ĐÂY LÀ LOẠI KIỂM THỬ "QUAN TRỌNG NHẤT" ẢNH HƯỞNG ĐẾN VIỆC P/M ĐƯỢC SỬ DỤNG HÀNG NGÀY HAY KHÔNG!!
+    " TIÊNG NÓI CỦA NGƯỜI DÙNG LÀ TỐI THƯỢNG!!!"
+ TUỲ LOẠI APP MÀ CÓ USER KHÁC NHAU
+4. KHI NÀO BẮT ĐẦU TIẾN HÀNH CHẤT LƯỢNG P/M?
+- Càng sớm càng tốt, ngay cả khi chưa viết code!!!
+- test ngay từ lúc lấy Reqs, test ngay cái design: DB, UI, Architecture,...           
+
+5. 7 principle trong testing
+     OOP: 4+5
+     TỔNG QUAN VỀ CÁC GÓC NHÌN LÀM APP: 4+1 MODEL
+     SOFTWARE REQUIREMENTS: 3 VIEWS
+     SCRUM/AGILE :4( 4 ĐIỀU TRONG AGILE MANIFESTO)
+     TESTING: 7 ( 7 ĐỊNH LUẬT) CẦN NHỚ KHI LÀM NGHỀ KIỂM THỬ!!!
+
+Những điều (7) sẽ nói dưới đây coi như là định  lí, tiên đề để định hướng việc kiểm thử của chúng ta.
+ 5.1.  Kiểm thử phần mềm không phải là việc chứng minh, hay khẳng định phần mềm khuôn có lỗi - phầm mềm luôn có lỗi, việc kiểm thử là tìm lỗi. GIẢM THIỂU BUG NẾU CÓ THỂ
+- CÁC  công ty luôn đưa ra quy trình để đảm bảo chất lượng: CMMI
+
+KHÔNG CẦN CHỜ CÓ SP THÌ MỚI KIỂM TRA, KIỂM THỬ PHẢI TỪ RẤT SỚM !!!
+
+ 5.2.  Không thể test hết các tổ hợp sử dụng/ tình huống sử dụng phần mệ của USER.
+- khi bán phần mềm ra thị trường ( product-based)
+- khi bàn giao sản phẩm theo phần mềm( service_based,bespoke_based)
+   dân kiểm thử phải test app theo tưởng tượng cách người dùng  sài app trong tương lai, xem có lỗi không!
+   - > Không thể test hết các trường hợp => phải có trick nào đó
+   VD1: Màn hình login=username/pass, hoặc username ko cần nhập, chỉ cần nhập pass. Số tổ hợp ko nhiều, nhưng cũng kha khá
+  - ko gõ user/pass -> nhấn login
+  - gõ đúng user, sai pass-> nhấn login
+5.3 . Early TESTING : KIểm thử càng sớm càng tốt, ngay từ REQS đã cần phải TEST DOCUMENT RỒI
+
+- K/h : app login = vân tay, võng mạc, gương mặt ...-> tự hỏi có cần thiết hay không
+5.4. Defect Clustering - Sự phân bố hay tập trung của bug!!!
+          Lỗi thường sẽ xảy ra nhiều ở một số chỗ của app --< Dân kiểm thử biết điều này để tập trung lực/ thời gian vào trong việc test chỗ này!!!
+  Ví dụ:
+     - Lỗi hay xảy ra ở chỗ tích hợp vói app khác, module khác: tích hợp app mình với MoMo,gọi API FB, GG, Map,...
+      -CRUD truyền thống ít lỗi( nằm trong hệ thống nhà mình)
+   vd:APP PC covid ra đời để thống nhất BlueZone, SKDT gom dât từ nhiều app về 1 nơi chung , xảy ra hiện tượng data thất lạc ... nhiều người chưa có màu xanh
+     - Phần import từ EXcel để tạo data nguồn cho app mới đang viết -> bug trong định dạng dữ liệu nhập vào hệ thống.
+ Nguyên LÍ PARETO 
+5.5 PESTICIDE PARADOX : nghịch lí thuốc trừ sau,  hiện tượng antibioxit resistant
+- chủ quan, quen việc test của dân kiểm thử -> chủ quan, bỏ qua bug
+   
+ - Lời khuyên : Nên thay đổi project, module cần test, mỗi trường app
+5.6 TEST IS CONTEXT DEPENDENT (kiểm thử phụ thuộc ngữ cảnh): 
+      - các loại app khác nhau, môi trường chạy app khác nhau, cách kiểm thử khác nhau
+      - app chạy đa nền khác app hỗ trợ 1 platform
+      - responsive là 1 dạng test khi app chạy trên màn hình to/ nhỏ
+      - tính tương thích của thiết bị: in bill loại giấy, loại máy in
+5.7 Ảo tượng về việc app hết lỗi !!! 
+   Vỗ ngực app ngon, hết lỗi( sai), ít lỗi, app tao chất lượng
+    Câu này ko đủ
+   Việc làm app chất lượng là DEFAULT 
+
+Chuyện quan trọng là : APP TAO PHẢI BẮT TREND, APP TUI DC K/H YÊU THÍCH, ĐƯỢC KHÁCH HÀNG ĐỀ XUẤT
+
+    MỤC TIÊUU TỐI THƯỢNG : LÀM USER/CUSTOMER HÀI LÒNG
+   (UX VÀ QUALITY)
+------------- ĐI VÀO THỰC HÀNH-----------------------
+TESTING LEVEL:  là cách phân chia công việc test, tiến hánh công việc kiểm thử chất lượng phần mềm dựa trên tiến trình hoàn thiện code, hoàn thiện app.
+[ Mở ngoặc: thực sự việc kiểm thử phần mềm phải được tiến hành sớm hơn, không phải bắt đầu từ giai đoạn viết code, test ngay ở gian đaonj reqs, NGUYÊN LÍ EARLY TESTING)
+    Chia 4 mức độ/4 giai đoạn kiểm thử app dựa trên viết code
+1. UNIT TEST
+ - Unit: đơn vị code, có thể xem 1  hàm, 1 class là 1 đơn vị  code cơ bản
+         Developer sẽ phải là gã có trách nhiệm đảm bảo rằng hàm/class của mình ngon!! ngon cho chính mình sử dụng, ngon cho người khác sử dụng.
+          Thế nào là code ngon,ổn - chắc chắn phải kiểm thử, DEVELOPER PHẢI TEST CODE CỦA MÌNH?
+      - Mở code ra đọc
+      - chạy thử code
+           - Chạy = cách gọi hàm trong main()
+           - In ra trang wed, hoặc windows form, hoặc ghi ra LOG file(.txt)
+        2 cách này đều ổn cả, nhưng bị 1 vấn đề:
+         - nếu ta có nhiều hàm cần test thì sao? code chạy thử hàm cũng dài dài
+         - mắt ta phải nhìn các OUTPUT trả về của hàm(ACTUAL), ta phải sự so sánh với cái ta nghĩ nó phải là thế
+  
+      máy, ngôn ngữ lập trình dư sức so sánh 2 giá trị bất kkif
+      nếu để mắt và não bộ phải suy nghĩ, tự so sánh expected và actual của hàm ko tận dụng được ưu thế của NNLT
+
+
+--> Cảm hứng để đề xuất 1 kĩ thuật kiểm thử hàm, class hiệu quả hơn không cần dùng sức người so sánh , viết 1 đoạn code nhỏ so sánh, đưa ra thông báo
+  - nếu có quá nhiều cặp EX và ACT cần so sánh, thì máy ơi, tự so sánh cả đám giùm, kết luận chung giùm tao:
+     - tất cả có đúng hay không, thằng nào bị sai báo tao !!
+
+Trong giang hồ, có những nhóm DEV người ta đã viết cho mình bộ thư viện/ framework giúp ta so sánh cả đám EX và ACT 1 cách hiệu quả. Ứng với mỗi NNLT, đều có bộ thư viện tương ứng để giúp dân DEV kiểm soát hàm mình viết có tốt với đa số tình huống xài hàm hay không!!!
+
+   thư viện này giúp so sánh 1 loạt các EX với ACT tương ứng khi xài hàm . sau đó kết luận chung giùm luôn!! Hàm ổn hay không thôi cho các đám value cần phải so sánh!!!
+  
+    Thư viện này viết phải đúng quy tắc, ko viết kiểu tự do như jdbc.jar mà phải viết đúng trình tự yêu cầu
+     Các thư viện mà để ta tự do sử dụng hàm -> LIBRARY mà thôi
+     Các thư viện mà ép ta viết theo 1 trình tự nào đó -> FRAMEWORK ( có khung nào đó, ta chỉ điền code vào)
+
+    Thư viện dùng để test các hàm của ta theo mô tả ở trên được gọi là Unit Test FrameWork, với mỗi NNLT khác nhau có UNit Test FrameWork khác nhau !!!
+
+java : JUnit(*), TestNG
+C#   : NUnit, MSUnit Test, xUnit,...
+JS  :...
+Python:...
+
+Dùng JUnit để test code của mình, các hàm của mình, các class của mình, chưa quan tâm UI, mức này gọi là mức UNIT TEST, DEVELOPER PHẢI LÀM VIỆC NÀY
+
+NetBeans viết code : 8.2 -> JUnit 4x
+                     13.0 -> JUNit 5x, cách viết khác 1 chút cho 4x                 độ: chơi thử 4x
+
+( Nguyên tắc chia package, mỗi thằng ở 1 package khác nhau, thằng run 1 package,...)
+
+Có 1 công ty Ngân Hàng của Úc
+
+
+  * UNIT TEST: Developer phải có trách nhiệm đảm bảo chất lượng của các hàm, các class do mình viết ra. Hàm nhận đầu vào, xử lí , ra kết quả ACTUAL khớp vói EXPECTED
+          ĐẢM BẢO CHẤT LƯỢNG CODE= CÁCH
+          - kĩ thuật TRÂU BÒ : main(), log file, pop-up, window form, wedpage: DÙNG MẮT LUẬN ĐÚNG SAI TRÊN RẤT NHIỀU CASE
+          - kĩ thuật xịn xò : TEST AUTOMATION/ VIẾT CODE TEST ĐỂ TEST CODE CHÍNH, xài dùng một framework/ bộ thư viện viết đoạn code ngắn , gọi hàm cần test, viết code này cho các case xài hàm, tình huống xài hàm
+       SAU ĐÓ KẾT LUẬN CHUNG CHO MỌI CASE 1 CÁCH TỰ ĐỘNG
+       MẮT LÚC NÀY CHỈ NHÌN 2 MÀU ANH ĐỎ CHO TẤT CẢ CÁC CASE
+
+
+
+* CÁCH LUẬN XANH ĐỎ CỦA UNIT TEST NÓI CHUNG, JUNIT NÓI RIÊNG
+ - Bạn liệt kê ra các case cần test- hàm cần test có những tình huống nào để xài- các đầu vào là gì
+                                  - liệt kê các đầu vào cần test cho hàm
+- Viết code để test code cho các case
+- Run
+        - Nếu tất cả các case đều ngon -> màu xanh cho tất cả
+        - Nếu có ít nhất 1 case tạch - > màu đỏ
+ 
+   NGHỆ THUẬT ĐẢM BẢO CHẤT LƯỢNG CODE CỦA DÂN DEV, DÂN QC/TESTER
+  - cố gắng tưởng tượng, liệt kê ra các case sử dụng app, sử dụng hàm 1 cách BAO QUÁT
+  - Liệt kê thiếu sót case, chuyện lớn kiểu khác 
+  - Đã đưa ra các case, chúng phải XANH HẾT!!!
+
+
+  ĐỎ : BAO GỒM 2 NGUYÊN NHÂN
+     1. MÌNH CODE SAI GIÁ TRỊ TRẢ VỀ !! CHIẾM SỐ NHIỀU
+     2. Mình kì vọng sai
+2. INTEGRATION TEST
+
+3.SYSTEM TEST
+
+4.UAT (USER ACCEPTANCE TESTING)
+ 
+
+ 
+
 
 
 
