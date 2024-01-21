@@ -6,30 +6,33 @@ namespace Baitap
 {
     internal class StoreManager
     {
+        public delegate void NotifyDelegate(string message);
+        public NotifyDelegate Notify;
+
         List<Product> products;
         double cash;
-        string msg;
-        Action<string> thongbao;
+
         public StoreManager()
         {
             products = new List<Product>();
-            thongbao = (message) => Console.WriteLine(message);
+            Notify = (message) => Console.WriteLine(message);
         }
+
         public void InitData()
         {
-            Console.WriteLine("Input money in your cash");
-            cash = Convert.ToDouble(Console.ReadLine());
+            cash = 50;
+            Console.WriteLine("Your Cash"+cash);
             products.Add(new Product(1, 12, 5));
             products.Add(new Product(2, 15, 10));
             products.Add(new Product(3, 20, 8));
             products.Add(new Product(4, 25, 6));
             products.Add(new Product(5, 30, 4));
         }
+
         public void menu()
         {
             while (true)
             {
-                if (msg != null) thongbao(msg);
                 Console.WriteLine("1.Sell Product");
                 Console.WriteLine("2.Buy Product");
                 Console.WriteLine("3.List of Product by  Quantity");
@@ -58,6 +61,7 @@ namespace Baitap
                 }
             }
         }
+
         public void ShowAllProducts()
         {
             foreach (Product product in products)
@@ -65,6 +69,7 @@ namespace Baitap
                 Console.WriteLine(product.ToString());
             }
         }
+
         public void SortbyQuantiTy()
         {
             products.Sort((x, y) => x.Quantity.CompareTo(y.Quantity));
@@ -72,43 +77,43 @@ namespace Baitap
 
         public void BuyProduct(int productID, int quantity)
         {
-
             var product = products.FirstOrDefault(p => p.ProductID == productID);
             if (product == null)
             {
-                msg = "Khong co san pham trong cua hang";
+                Notify?.Invoke("Khong co san pham trong cua hang");
             }
             else
             {
-                if (cash <= product.Price * quantity)
+                double totalCost = product.Price * quantity;
+                if (cash < totalCost)
                 {
-                    msg = "You haven't enough to buy all them";
+                    Notify?.Invoke("You haven't enough to buy all them");
                 }
                 else
                 {
-                    product.Quantity = product.Quantity + quantity;
-                    cash = cash - product.Price * quantity;
+                    product.Quantity += quantity;
+                    cash -= totalCost;
                 }
             }
         }
+
 
         public void SellProduct(int productID, int quantity)
         {
             var product = products.FirstOrDefault(p => p.ProductID == productID);
             if (product == null)
             {
-                msg = "Khong co san pham trong cua hang";
+                Notify?.Invoke("Khong co san pham trong cua hang");
             }
-
             else
             {
                 if (product.Quantity < quantity)
                 {
-                    msg = "Not enough quantity to sell";
+                    Notify?.Invoke("Not enough quantity to sell");
                 }
                 else if (product.Quantity <= 5)
                 {
-                    msg = "here is a product having quantity less than 5";
+                    Notify?.Invoke("here is a product having quantity less than 5");
                 }
                 else
                 {

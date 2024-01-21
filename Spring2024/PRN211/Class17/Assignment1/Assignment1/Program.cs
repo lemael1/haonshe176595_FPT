@@ -4,10 +4,9 @@
     {
         static void Main(string[] args)
         {
-            StoreManager storeManager = new StoreManager();         
+            StoreManager storeManager = new StoreManager();
             storeManager.InitData();
             storeManager.menu();
-
         }
     }
 }

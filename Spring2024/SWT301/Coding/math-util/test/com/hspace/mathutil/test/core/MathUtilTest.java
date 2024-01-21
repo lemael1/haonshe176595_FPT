@@ -44,10 +44,7 @@ public class MathUtilTest {
           Assert.assertEquals(1, MathUtil.getFactorial(1));// tui muốn 1!==1
           Assert.assertEquals(2, MathUtil.getFactorial(2));
           Assert.assertEquals(6, MathUtil.getFactorial(3));
-          Assert.assertEquals(24, MathUtil.getFactorial(4));
-          
-    
-          
+          Assert.assertEquals(24, MathUtil.getFactorial(4));         
           
           
           
@@ -57,6 +54,57 @@ public class MathUtilTest {
       // nếu không giống nhau -> thảy màu đỏ đền đường
       // hàm ý expected và actual ko giống nhau
     
-   
+    
+    // hàm getF() ta thiết kế có 2 tình huống xử lí
+    // 1. đưa data tử tế trong [0..20]-> tính đúng đc n!- done
+    // 2. đưa data vào cả chớn ; THIẾT KẾ CỦA HÀM LÀ NÉM RA NGOẠI LỆ
+    // TAO KÌ VỌNG NGOẠI LỆ XUẤT HIỆN KHI N<0 || N>20
+    // rất mong ngoại lệ xuất hiện với n cà trớn này
+    
+    // Nếu hàm nhận vào n<0 hoặc n>20 và hàm ném ra ngoại leej
+    // HÀM ĐÚNG NHƯ THIẾT KẾ --> XANH PHẢI XUẤT HIỆN
+    
+   // nếu hàm nhận vào n< 0 hoặc n>20 và hàm éo ra ngoại lệ
+    // sure, HÀM CHẠY SAI THIẾT KẾ, SAI KÌ VỌNG, MÀU ĐỎ
+    
+    //Test case: 
+    //input:-5
+    //expeced: IllegalArgumentException xuất hiện
+    // tình huống bất thuwongf,  ngoại lệ, ngoài dự tính, không thể so sánh theo kiểu value
+    // đo lường bằng cách , chúng có xuất hiện hay không
+    // assertEqual() ko dùng để so sánh 2 ngoại lệ
+    // equals() là bằng nhau hay không trên value!!!
+    
+    
+    // Màu đỏ, do NÉM RA NGOẠI LỆ KHÔNG NHƯ KÌ VỌNG
+    // KO DO NÉM SAI
+//   @Test(expected = NumberFormatException.class)
+//    public void testGetFactorialGivenWrongArgumentThrowsException(){
+//           MathUtil.getFactorial(-5);// hàm @Test này chạy, hay hàm F()
+//                                      // sẽ ném vê ngoại lệ numberFormat
+//    }
+//    
+    @Test(expected = IllegalArgumentException.class)
+    public void testGetFactorialGivenWrongArgumentThrowsException(){
+           MathUtil.getFactorial(-5);// hàm @Test này chạy, hay hàm F()
+                                      // sẽ ném vê ngoại lệ numberFormat
+    }
+    
+    // cách khác để bắt ngoại lệ xuất hiện, viết tự nhiên hơn !!!
+    // xài lambda
+    //Test case; hàm sẽ ném về ngoại lệ nếu nhận vào 21
+    // Tui cần thấy màu xanh khi chơi với 21!
+    @Test
+     public void testGetFactorialGivenWrongArgumentThrowsException_LambdaVersion(){
+          
+           Assert.assertThrows(IllegalArgumentException.class, () -> MathUtil.getFactorial(-5));
+         // tham số 1 : loại ngoại lệ muốn so sánh,
+         // tham số 2: đoạn code chạy răng ra ngoài: runnable
+                   
+                   
+                   MathUtil.getFactorial(-5);// hàm @Test này chạy, hay hàm F()
+                                      // sẽ ném vê ngoại lệ numberFormat
+    }
+    
    
 }

@@ -223,11 +223,32 @@ Có 1 công ty Ngân Hàng của Úc
   ĐỎ : BAO GỒM 2 NGUYÊN NHÂN
      1. MÌNH CODE SAI GIÁ TRỊ TRẢ VỀ !! CHIẾM SỐ NHIỀU
      2. Mình kì vọng sai
+
+
+
+* Mở rộng: HỌC NHANH VỀ LAMDA EXPRESSION
+	- CHỈ xảy ra  khi chơi Inheritance/Interface
+	- Chỉ xảy ra khi chơi với Interface mà chỉ có 1 hàm abstract
+	Interface chỉ có duy nhất 1 hàm abstrac/ hàm không có code
+	được gọi là Functional Interface
+    	( bên trong interface , hàm ko được có code. Muốn có code phải là static hoặc 	default
+	bên trong interface trong cần khai báo abstract in method, abstract class thì cần)
+	lambda extends unonymous class
+	
+	
+    
+
+
+ 
 2. INTEGRATION TEST
 
 3.SYSTEM TEST
 
 4.UAT (USER ACCEPTANCE TESTING)
+
+
+
+
  
 
  
