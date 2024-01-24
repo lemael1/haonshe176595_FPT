@@ -1,4 +1,6 @@
-﻿namespace DelegateExample
+﻿using System.Diagnostics;
+
+namespace DelegateExample
 {
     internal class Program
     {
@@ -18,7 +20,7 @@
 
             Console.WriteLine("---------- MULTICASTING ----------");
             Car2 car2 = new Car2(100, 20);
-            car2.RegisterWithCarEngine(OnCarEngineEvent);
+            car2.RegisterWithCarEngine(OnCarEngineEventsArgs);
             car2.RegisterWithCarEngine(OnCarEngineEvent2);
             for (int i = 0; i < 6; i++)
             {
@@ -42,6 +44,10 @@
             Console.WriteLine("\n**** Message From Car Engine Object ****");
             Console.WriteLine("=> {0}", msg.ToUpper());
             Console.WriteLine("****************************************\n");
+        }
+       static void OnCarEngineEventsArgs(object sender, CarEventArgs e)
+        {
+            Console.WriteLine(e.msg);
         }
     }
 }

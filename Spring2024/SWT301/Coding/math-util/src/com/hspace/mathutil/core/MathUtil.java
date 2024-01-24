@@ -8,7 +8,7 @@ package com.hspace.mathutil.core;
  *
  * @author Admin
  */
-public class MathUtil {
+ public class MathUtil {
 
     // trong class này cung câp cho ai đó rất nhiều hàm sử lí toán học
     // clone class Math của JDK
@@ -31,7 +31,7 @@ public class MathUtil {
         long product = 1;//tích nhân dồn, thuật toán ốc bu dồn thịt
         for (int i = 2; i <= n; i++) 
             product *= i;      // product=product*i
-
+                                 
         return product;
     }
 }

@@ -5,6 +5,7 @@
 package com.hspace.mathutil.test.core;
 
 import com.hspace.mathutil.core.MathUtil;
+import java.nio.channels.AsynchronousByteChannel;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -88,22 +89,27 @@ public class MathUtilTest {
     public void testGetFactorialGivenWrongArgumentThrowsException(){
            MathUtil.getFactorial(-5);// hàm @Test này chạy, hay hàm F()
                                       // sẽ ném vê ngoại lệ numberFormat
+                     
     }
     
     // cách khác để bắt ngoại lệ xuất hiện, viết tự nhiên hơn !!!
     // xài lambda
     //Test case; hàm sẽ ném về ngoại lệ nếu nhận vào 21
     // Tui cần thấy màu xanh khi chơi với 21!
+//    
+    
+    // có ném, tức là hàm đúng thiết kế, màu xanh
     @Test
-     public void testGetFactorialGivenWrongArgumentThrowsException_LambdaVersion(){
-          
-           Assert.assertThrows(IllegalArgumentException.class, () -> MathUtil.getFactorial(-5));
-         // tham số 1 : loại ngoại lệ muốn so sánh,
-         // tham số 2: đoạn code chạy răng ra ngoài: runnable
-                   
-                   
-                   MathUtil.getFactorial(-5);// hàm @Test này chạy, hay hàm F()
-                                      // sẽ ném vê ngoại lệ numberFormat
+     public void testGetFactorialGivenWrongArgumentThrowsException_LambdaVersion(){       
+           //chủ động kiểm soắt ngoại lệ   
+         try {
+            MathUtil.getFactorial(-5);
+        } catch (Exception e) {
+            Assert.assertEquals("Invalid argument. N must be between 0 .. 20",e.getMessage());
+            // bắt try-catch là Junit sẽ ra màu xanh do chủ động bắt
+            // nhưng ko chắc ngoại lệ mình kì vọng có xuất hiện hay không
+            // có đoạn code kiểm soát đúng ngoại lệ IllegalArgumentException hay không          
+        }                    
     }
     
    

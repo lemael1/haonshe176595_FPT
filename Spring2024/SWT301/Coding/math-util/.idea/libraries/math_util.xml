@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="math-util">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/math-util.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

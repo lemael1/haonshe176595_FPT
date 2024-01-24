@@ -235,8 +235,15 @@ Có 1 công ty Ngân Hàng của Úc
 	bên trong interface trong cần khai báo abstract in method, abstract class thì cần)
 	lambda extends unonymous class
 	
-	
+	Clean :Xoá sạch, dọn dẹp. Build : build lại tất cả, đóng gói
     
+
+       TDD, DDT, CI
+
+  Chuẩn bị sẵn GitHub account( đăng kí miễn phí ở github.com dùng email cá nhân)
+url cho đẹp , có ý nghĩa: github.com/nhận diện thương hiệu
+
+dowload tool để chơi github: git scm download
 
 
  
