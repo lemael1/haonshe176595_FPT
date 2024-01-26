@@ -1,0 +1,12 @@
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\AutomobileSolution\AutomobileLibrary\bin\Debug\net6.0\AutomobileLibrary.deps.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\AutomobileSolution\AutomobileLibrary\bin\Debug\net6.0\AutomobileLibrary.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\AutomobileSolution\AutomobileLibrary\bin\Debug\net6.0\AutomobileLibrary.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\AutomobileSolution\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\AutomobileSolution\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.AssemblyInfoInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\AutomobileSolution\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.AssemblyInfo.cs
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\AutomobileSolution\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.csproj.CoreCompileInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\AutomobileSolution\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.sourcelink.json
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\AutomobileSolution\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\AutomobileSolution\AutomobileLibrary\obj\Debug\net6.0\refint\AutomobileLibrary.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\AutomobileSolution\AutomobileLibrary\obj\Debug\net6.0\AutomobileLibrary.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\Class17\AutomobileSolution\AutomobileLibrary\obj\Debug\net6.0\ref\AutomobileLibrary.dll

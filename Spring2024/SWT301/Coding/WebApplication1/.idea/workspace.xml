@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f99ce38c-9549-407d-b43c-c60113823a60" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/controller/AddEmployeeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/controller/AddEmployeeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/controller/SearchEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/controller/SearchEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/controller/UpdateEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/controller/UpdateEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/models/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/WEB-INF/classes/models/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/truong/controller/DeleteEmployee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/truong/controller/ListEmployee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/truong/dal/DBContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/WEB-INF/classes/truong/dal/EmployeeDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/list-employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/list-employee.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/web/update-employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/web/update-employee.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/controller/AddEmployeeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/controller/AddEmployeeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/controller/DeleteEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/controller/DeleteEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/controller/ListEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/controller/ListEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/controller/SearchEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/controller/SearchEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/controller/UpdateEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/controller/UpdateEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/dal/DBContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/dal/DBContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/dal/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/dal/EmployeeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/list-employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/list-employee.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/update-employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/update-employee.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebApplication11/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApplication11/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2bMIoCR7L9mRVo6E1aA1sdExqL6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/FPTU/KI5/SWP391/WebApplication1",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f99ce38c-9549-407d-b43c-c60113823a60" name="Changes" comment="" />
+      <created>1706018693290</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706018693290</updated>
+      <workItem from="1706018694459" duration="89000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -42,6 +42,8 @@
             btnLoad = new Button();
             btnNew = new Button();
             btnDelete = new Button();
+            dgvCarList = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvCarList).BeginInit();
             SuspendLayout();
             // 
             // IbCarID
@@ -134,42 +136,59 @@
             // 
             // btnLoad
             // 
+            btnLoad.BackColor = SystemColors.AppWorkspace;
             btnLoad.DialogResult = DialogResult.OK;
-            btnLoad.Location = new Point(154, 357);
+            btnLoad.Location = new Point(183, 157);
             btnLoad.Name = "btnLoad";
             btnLoad.Size = new Size(124, 29);
             btnLoad.TabIndex = 16;
             btnLoad.Text = "Load";
-            btnLoad.UseVisualStyleBackColor = true;
+            btnLoad.UseVisualStyleBackColor = false;
             btnLoad.Click += btnLoad_Click;
             // 
             // btnNew
             // 
+            btnNew.BackColor = SystemColors.AppWorkspace;
             btnNew.DialogResult = DialogResult.OK;
-            btnNew.Location = new Point(349, 357);
+            btnNew.Location = new Point(368, 157);
             btnNew.Name = "btnNew";
             btnNew.Size = new Size(124, 29);
             btnNew.TabIndex = 17;
             btnNew.Text = "New";
-            btnNew.UseVisualStyleBackColor = true;
+            btnNew.UseVisualStyleBackColor = false;
             btnNew.Click += btnNew_Click;
             // 
             // btnDelete
             // 
+            btnDelete.BackColor = SystemColors.AppWorkspace;
             btnDelete.DialogResult = DialogResult.OK;
-            btnDelete.Location = new Point(547, 357);
+            btnDelete.Location = new Point(554, 157);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(124, 29);
             btnDelete.TabIndex = 18;
             btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
+            // 
+            // dgvCarList
+            // 
+            dgvCarList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCarList.Location = new Point(80, 213);
+            dgvCarList.Name = "dgvCarList";
+            dgvCarList.ReadOnly = true;
+            dgvCarList.RowHeadersWidth = 51;
+            dgvCarList.RowTemplate.Height = 29;
+            dgvCarList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvCarList.Size = new Size(680, 188);
+            dgvCarList.TabIndex = 19;
             // 
             // frmCarManagement
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(800, 450);
+            Controls.Add(dgvCarList);
             Controls.Add(btnDelete);
             Controls.Add(btnNew);
             Controls.Add(btnLoad);
@@ -188,6 +207,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Car Management";
             Load += frmCarManagement_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvCarList).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -208,5 +228,6 @@
         private Button btnLoad;
         private Button btnNew;
         private Button btnDelete;
+        private DataGridView dgvCarList;
     }
 }

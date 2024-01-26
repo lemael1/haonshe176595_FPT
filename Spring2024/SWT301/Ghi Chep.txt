@@ -245,8 +245,48 @@ url cho đẹp , có ý nghĩa: github.com/nhận diện thương hiệu
 
 dowload tool để chơi github: git scm download
 
+JDK, .Net FW -> Cài đặt môi trường ổ đĩa C:
+- Đặt biến môi trường, tạo mới: Java_HOME C:\ .. nơi cài JDK, Đường dẫn  gồm cả tên thư mục JDK vd: ...\jdk-18
+                             vào thư mục này thì phải thấy thư mục bin mới là
+                             đúng 
+- Thư mục chứa Project/code  CẤM TUYỆT ĐÓI DÙNG TIẾNG VIỆT CÓ DẤU, DẤU CÁCH, NHƯNGDX KÍ TỰ ĐẶC BIỆT KHÁC, các compiler với Unicode 
 
- 
+
+
+   KĨ THUẬT DDT KHI CHƠI VỚI UNIT TEST
+   DDT viêts tắt của : DATA DRIVEN TESTING - Kĩ thuật kiểm thử hướng theo tập data chuẩn bị sẵn 
+     là kĩ thuật tách lời gọi hàm cần test ra 1 chỗ
+                                        -data đâu vào và expected ra 1 chỗ khác
+                                        
+                                          nhồi/ nạp/feed đám data này vào 1 lời gọi hàm : giúp nhìn code dễ dàng hơn, trong sáng hơn, tách biệt việc chuẩn bị data ra 1 chỗ. Vì việc kiểm thử dòi hỏi chặt chẽ, cẩn thận  ==> code để test code cũng cần phải đẹp, chẩun, dễ bảo trì
+
+ Trong giới công nghiệp, tệp data test để ở:
+- trong file Excel theo hàng cột
+- trong text file( dùng tab để phân biệt theo hàng cột) nó là dạng CSV
+- nhúng trực tiếp trong code, nhưng tách so với code JUnit Test
+- để trong table của database chứa toàn data để test, không phải là database của app
+
+
+
+Phân tích bài test hàm tính giai thừa
+Input(n)	Expected(n!)
+0                  1
+1 		   1	
+2		   2
+3	           6
+Tradition:
+Assert.assertEquals(1, .getF(0));
+Assert.assertEquals(1, .getF(1));
+
+
+DDT: dễ hiểu, dễ đánh giá được tình huống xài đã đủ hay chưa!!!!
+Assert.assertEquals(expected, .getF(input));
+Chốt deal: DDT là tách tập data test ra 1 chỗ, đặt cho chúng thành các biến tương ứng, rồi đưa biến vào hàm test!!
+DDT còn đc gọi với 1 tên mới : Kĩ thuật tham số hoá tập data test
+           
+     Có kinh nghiệm không nhất thiết công ty đã làm qua( kinh nghiệm trong chiến trường) . Học, làm project cũng gọi là kinh nghiệm,
+ - Tiến trình Junit độc lập với tiến trình biên dịch code: khi bạn bấm clean and build , mặc kệ ở Test Package như thế nào thì Ant vẫn đóng gói. Vậy ta phải thiết lập để khi testcase sai thì không được đóng gói nữa
+    
 2. INTEGRATION TEST
 
 3.SYSTEM TEST
