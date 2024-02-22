@@ -1,0 +1,86 @@
+5/1/23
+-GetDrives() là hàm static: trả về danh sách các ổ có trong máy tính,
+  được gọi từ tên lớp
+- Directory: Create, moving về thư mục : là hàm static
+    Dùng luôn :Directory.Move(), không cần khai báo class
+- DirectoryInfo: cũng tương tự nhưng gắn với 1 folder, chỉ làm việc với flder đó thôi
+
+
+Lớp File và FileInfo
+5 lớp Drive, Directory, DirectoryInfo, File,FileInfo làm những công việc quản lí thư mục, file
+-
+copy to directory
+ ------
+Syntax Using(StreamReader reader= new StreamReader(FileName){
+       // Line Of Code
+       // Line Of Code
+} Dùng khi reader có dữ liệu lớn, dùng xong reader không cần dùng lại nữa. Những reader.Method() bên ngoài sẽ không dùng được nữa. nên sẽ không cần reader.close();
+---- Interface IComparable và IComparer
+
+-Cách dùng Class ClassName:IComparable<Đối tượng ví dụ Object,String,int,..>
+Dùng để so sánh 1 đối tượng ví dụ như Title, Id. Nó sẽ tham chiếu đến 1 method ToCompare().
+-Cách dùng Class ClassName:IComparer<Object>{
+     public int Compare(Object o1,Object O2){
+       return o1.....CompareTo(o2.....)
+}       : Nên Dùng cách này, có thể tạo nhiều đối tượng so sánh
+}
+
+- Ứng dụng delegate là nơi gọi hàm , 1 nơi quyết định hàm nào là thực hiện
+ có thể delegateobj+=Sub; hoặc delegateobj-=Sub
+Vậy chuyện gì sẽ xảy ra khi trong delegateobj còn Sub cuối cùng và bạn muốn remove nó luôn
+-> thì nó sẽ không biết thực hiện hàm nào=> Null Exception, RunTime
+
+- Func : là 1 kiểu delegate có giá trị truyền về
+    ex: Func<Kiểu parameter>var_delegate : có nghĩa là 2 tham số truyền vào 2 int . Kiểu dữ liệu trả về là bool . VD: Func<int, int, bool> bien1;
+- Action: là 1 kiểu delegate không có giá trị truyền về
+ex: Action<parameter>var_delegate.
+    ex: Action<Kiểu parameter>var_delegate: VD: Action<string>Nice;
+- anonymous function
+- lamda : quy tắc rút gọn viết của anonymous function
+-extension method: nhuwngx hàm được viết thêm cho những class đã có(như trong lib,...)
+-linq là etension method dùng để truy vấn dữ liệu trong các lớp
+-class extension nên là static class
+pstatic void OnCarEngineVentArgs(object sender, C
+-----------------
+Kiến thức về Wd Fom
+- Là tập hợp gòm nhiều form
+- trên mỗi form có nhiều thành phần hiển thị để tương tác gọi là control
+   +> control built-in : có sẵn
+   +> user control: control người dùng tự tạo
+------------------
+Kiến thức về ADO
+- Khi kết nối với sqlserver: ưu iên dungg System.Data.SqlClient: để xử lí như bình thuwongf
+- Công cụ sử dụng đối với 1 khối dữ liệu: SqlDataAdapter: bìnnh thường thì ta sẽ từ CSDL để chuyển sang model, còn với cái này thì có thể làm 2 chiều, từ những update ở code thì có thể tự động thay đổi ở CSDL
+- Giải pháp để xử dụng đó là dùng SQLParameter, = null. về nhà tự nghiên cứ
+--------------------------------------
+  giaos glnagf
+1) DOTNET CLI
+ - tAAPJ HOPWJ NHOM LENH GIUP LAM CAC CONG VIEC LIEN QUAN DEN TAO DU AN, BIEN DICH, BIEN DOI
+ - GOI LENH LAMF VIEC VOI DU AN VIET CODE QUA LENH DOTNET
+ 2) các lệnh happy:
+  - dotnet new
+  - dotnet build
+- lệnh tạo mối 1 console :dotnet new console --framework net8.0 --use-program-main
+- dotnt run
+3) chương trình đầu tay : Hello World
+ gox lệnh dotnet run để chạy app console ở màn hình đen
+ > .DLL ĐEM SANG BÊN LINUX, MACOS , NẾU ĐÃ CÀI SẴN RUN-TIME CỦA OS ĐÓ, THÌ GÕ
+ LỆNH SAU ĐỂ CHẠY .DLL Ở TERMINAL
+ dotnet <tênfile.dll>
+VI: ĐỂ LẬP TRÌNH CHUYÊN NGHIỆP THÌ CẦN NHỮNG ĐỒ CHƠI GÌ:?
+1. NGÔN NGỮ LẬP TRÌNH ĐỂ VIẾT CÁC CÂU LỆNH, KỊCH BẢN HÀNH ĐỘNG CỦA APP
+- c#,VB.NET,C++,F#(#SHARK) -> MICROSOFT CHẾ RA 2001
+        	XÀI CHUNG .NET RUNTIME,SDK LUÔN
+- JAVA,GROOVY,SCALA -> XÀI CHUNG JDK,JRE
+
+2. CẦN SDK(CLI,RUNTIME) 
+       CODE, ĐÓNG GÓI           CHẠY APP
+3. CÔNG CỤ GÕ CODE - TEXT THUẦN LÀ ĐẠT, LẬP TRÌNH LÀ GÕ ENGLISH-LINE
+3.1 CÔNG CỤ HẠNG NHẸ GÕ TEXT: NOTEPAD, VIM
+3.2 CÔNG CỤ HẠNG VỪA GÕ TEXT, THÊM NHIỀU PLUGIN/EXTENSION
+    CODE EDITOR: SUBLIME,BRACKET,ATOM,VSCODE
+3.3 CÔNG CỤ HẠNG NẶNG -IDE- INTEGRATED DEVELOPMENT ENVIRONMENT
+ - CÓ ĐỦ ĐỒ CHƠI KHI CÀI THẰNG NÀY, ÍT CẦN ĐẾN PLUGIN, EXTENSION
+ - CÓ KHI CÀI NÓ CÓ LUÔN SDK(COMBO)
+ .NET ->VS - VISUAL STUDIO(MS), RIDER(JETBRAIN)
+ .JAVA ->NETBEANS(ORACLE/APACHE), INTELLIJ(JETBRAIN)

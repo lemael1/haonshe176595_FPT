@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{3B204E95-8F35-40F3-8CCC-BB912C2C197C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoADOModel", "DemoADOModel\DemoADOModel.csproj", "{362E06BE-84EF-4750-AA4C-467B1A1D7E60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B204E95-8F35-40F3-8CCC-BB912C2C197C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B204E95-8F35-40F3-8CCC-BB912C2C197C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B204E95-8F35-40F3-8CCC-BB912C2C197C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B204E95-8F35-40F3-8CCC-BB912C2C197C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{362E06BE-84EF-4750-AA4C-467B1A1D7E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{362E06BE-84EF-4750-AA4C-467B1A1D7E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{362E06BE-84EF-4750-AA4C-467B1A1D7E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{362E06BE-84EF-4750-AA4C-467B1A1D7E60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64B61200-1422-4685-A7F1-45F11386DFAE}
+	EndGlobalSection
+EndGlobal

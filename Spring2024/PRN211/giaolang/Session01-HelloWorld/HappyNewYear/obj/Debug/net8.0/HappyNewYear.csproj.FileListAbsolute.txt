@@ -1,0 +1,15 @@
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\bin\Debug\net8.0\HappyNewYear.exe
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\bin\Debug\net8.0\HappyNewYear.deps.json
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\bin\Debug\net8.0\HappyNewYear.runtimeconfig.json
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\bin\Debug\net8.0\HappyNewYear.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\bin\Debug\net8.0\HappyNewYear.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.GeneratedMSBuildEditorConfig.editorconfig
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.AssemblyInfoInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.AssemblyInfo.cs
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.csproj.CoreCompileInputs.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.sourcelink.json
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\refint\HappyNewYear.dll
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.pdb
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.genruntimeconfig.cache
+D:\haonshe176595_FPT\Spring2024\PRN211\giaolang\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\ref\HappyNewYear.dll
